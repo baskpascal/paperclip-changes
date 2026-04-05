@@ -1,6 +1,7 @@
 export const type = "ollama";
 export const label = "Ollama";
 export const DEFAULT_OLLAMA_BASE_URL = "http://127.0.0.1:11434";
+
 export const agentConfigurationDoc = `# ollama agent configuration
 
 Adapter: ollama
@@ -26,5 +27,5 @@ Notes:
 - Model discovery is driven by the configured base URL.
 - If a model or server does not support multimodal input, the adapter degrades gracefully to text-only execution.
 `;
+
 export { createServerAdapter } from "./server/index.js";
-//# sourceMappingURL=index.js.map
